@@ -1,0 +1,9 @@
+target
+frontend/node_modules
+demo/target
+node_modules
+*.log
+*.tmp
+.git
+.vscode
+.DS_Store

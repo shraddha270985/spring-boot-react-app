@@ -5,7 +5,10 @@ import { Container, Spinner } from "react-bootstrap";
 import { setToken, setUser } from "./features/authSlice";
 
 const BACKEND_URL =
-  process.env.REACT_APP_BACKEND_URL || "http://localhost:8080";
+  process.env.REACT_APP_BACKEND_URL ||
+  (process.env.NODE_ENV === "production"
+    ? window.location.origin
+    : "http://localhost:8080");
 
 export default function LoginSuccess() {
   const dispatch = useDispatch();

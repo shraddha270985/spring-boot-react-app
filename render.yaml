@@ -8,8 +8,6 @@ services:
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: prod
-      - key: SPRING_LIQUIBASE_CHANGE_LOG
-        value: classpath:/db/changelog/db.changelog-master.xml
       - key: SPRING_DATASOURCE_URL
         sync: false
       - key: SPRING_DATASOURCE_USERNAME
